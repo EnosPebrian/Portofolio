@@ -93,9 +93,10 @@ section.profile {
   gap: 30px;
   font-size: 30px;
 }
-
-#profilephoto {
+.profilephoto{
   max-width: 400px;
+}
+#profile-photo {
   border-radius: 50%;
   border: 2px solid white;
 }
