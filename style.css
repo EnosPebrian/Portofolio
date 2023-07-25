@@ -93,11 +93,11 @@ section.profile {
   gap: 30px;
   font-size: 30px;
 }
-.profilephoto{
+.profile-photo {
   max-width: 400px;
   border-radius: 50%;
 }
-#profile-photo {
+#profilephoto {
   border-radius: 50%;
   border: 2px solid white;
 }
@@ -278,6 +278,6 @@ nav > div > .hyperlink-profile {
     width: 100%;
   }
   #mid-nav {
-  display:none;
+    display: none;
   }
 }
