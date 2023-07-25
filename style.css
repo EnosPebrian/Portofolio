@@ -1,0 +1,218 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: linear-gradient(
+    300deg,
+    rgb(250, 161, 255),
+    rgb(154, 216, 211),
+    rgb(0, 255, 255)
+  );
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 1000px;
+}
+
+section,
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section.profile {
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  font-size: 30px;
+}
+
+#profilephoto {
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+.about {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  position: relative;
+  margin: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+h1 {
+  color: black;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  height: 30px;
+}
+
+#about-explanation {
+  max-width: 600px;
+  text-align: center;
+}
+
+#click-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.hyperlink-profile {
+  color: white;
+  background-color: rgb(112, 112, 193);
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.box {
+  max-width: 200px;
+}
+
+footer {
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+nav.flex-row {
+  justify-content: space-around;
+}
+
+nav > div > .hyperlink-profile {
+  background-color: grey;
+  padding: 5px;
+}
+
+.hyperlink-profile:hover {
+  background-color: rgb(25, 25, 13);
+}
+
+.right-circle,
+.left-circle {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: -50px;
+  display: none;
+}
+.right-circle {
+  display: flex;
+  justify-content: flex-end;
+  display: none;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: greenyellow;
+}
+
+.xs {
+  width: 20%;
+  height: 20%;
+  opacity: 35%;
+}
+
+.s {
+  width: 35%;
+  height: 35%;
+  opacity: 30%;
+}
+
+.m {
+  width: 55%;
+  height: 55%;
+  opacity: 25%;
+}
+
+.l {
+  width: 70%;
+  height: 70%;
+  opacity: 20%;
+}
+
+.xl {
+  width: 85%;
+  height: 85%;
+  opacity: 15%;
+}
+
+.xxl {
+  width: 100%;
+  height: 100%;
+  opacity: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+  .left-circle {
+    display: none;
+  }
+  .right-circle {
+    display: none;
+  }
+  #profilephoto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  section.profile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .flex-row {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #click-link {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  #profilephoto {
+    width: 100%;
+  }
+}
