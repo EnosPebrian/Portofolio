@@ -5,9 +5,9 @@ html {
 
 html {
   color: white;
-  /* animation: color-animation 3s ease infinite; */
+  animation: color-animation 3s ease infinite;
 }
-/* @keyframes color-animation {
+@keyframes color-animation {
   0% {
     color: black;
   }
@@ -17,7 +17,7 @@ html {
   100% {
     color: black;
   }
-} */
+}
 body {
   margin: 0;
   /* background: linear-gradient(
@@ -84,6 +84,10 @@ section,
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+section {
+  height: 100vh;
 }
 
 section.profile {
