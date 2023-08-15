@@ -39,9 +39,7 @@ section,
   text-align: center;
 }
 
-section {
-  height: 100vh;
-}
+
 
 section.profile {
   padding: 10px;
